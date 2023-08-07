@@ -1,0 +1,32 @@
+.Button {
+  display: flex;
+  background-color: #e9ecef;
+  color: #212529;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  border: 0;
+  padding: 0 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 150ms;
+  user-select: none;
+}
+
+.Button:active {
+  background-color: #dee2e6;
+  transition: 150ms;
+}
+
+.Button.Primary {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.Button.Primary:active {
+  background-color: #343a40;
+  transition: 150ms;
+}
