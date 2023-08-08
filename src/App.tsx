@@ -2,6 +2,7 @@ import Logo from "./assets/logo.svg";
 
 import styles from "./App.module.css";
 import { Button, PostCard } from "./components";
+import { Avatar } from "./components/Avatar/Avatar";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         </div>
 
         <div className={styles.Navigation}>
-          <Button label="Присоединиться" primary />
+          <Button compact icon="search" transparent />
+          <Button label="Создать" primary />
+          <Avatar avatar="https://sun9-79.userapi.com/impf/c844321/v844321699/14984/MZk-JQLfsS8.jpg?size=500x517&quality=96&sign=c6c9ff0d9122f1bb98f04d1509a3b2b8&type=album" />
         </div>
       </div>
 

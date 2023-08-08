@@ -34,7 +34,7 @@
 .Navigation {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .Content {

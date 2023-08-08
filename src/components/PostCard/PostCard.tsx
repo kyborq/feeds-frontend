@@ -1,5 +1,6 @@
 import { Button } from "..";
 import { Post } from "../../models/post-model";
+import { Avatar } from "../Avatar/Avatar";
 import styles from "./PostCard.module.css";
 import { PostFooter } from "./components";
 
@@ -11,7 +12,7 @@ export const PostCard: React.FC<Props> = ({ post }) => {
   return (
     <div className={styles.Post}>
       <div className={styles.Header}>
-        <div className={styles.Avatar} />
+        <Avatar avatar={post.author.avatar} />
         <div className={styles.Info}>
           <span className={styles.Author}>{post.author.name}</span>
           <span className={styles.Date}>{post.meta.created}</span>
