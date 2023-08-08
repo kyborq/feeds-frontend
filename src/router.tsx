@@ -5,6 +5,7 @@ import { Profile } from "./pages/Profile/Profile";
 import { Post } from "./pages/Profile/Post";
 import { Saved } from "./pages/Profile/Saved";
 import { Search } from "./pages/Search/Search";
+import { Auth } from "./pages/Auth/Auth";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: "search",
         element: <Search />,
+      },
+      {
+        path: "auth",
+        element: <Auth />,
       },
     ],
   },
