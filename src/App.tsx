@@ -3,6 +3,7 @@ import Logo from "./assets/logo.svg";
 import styles from "./App.module.css";
 import { Button, PostCard } from "./components";
 import { Avatar } from "./components/Avatar/Avatar";
+import { Form } from "./components/Form/Form";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       </div>
 
       <div className={styles.Content}>
+        <Form />
         <PostCard
           post={{
             author: {
