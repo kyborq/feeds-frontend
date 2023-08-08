@@ -1,25 +1,12 @@
-import Logo from "./assets/logo.svg";
-
 import styles from "./App.module.css";
 import { Button, PostCard } from "./components";
-import { Avatar } from "./components/Avatar/Avatar";
 import { Form } from "./components/Form/Form";
+import { Header } from "./components/Header/Header";
 
 function App() {
   return (
     <div className={styles.App}>
-      <div className={styles.Header}>
-        <div className={styles.Logo}>
-          <Logo />
-          <h1 className={styles.Title}>Feeds</h1>
-        </div>
-
-        <div className={styles.Navigation}>
-          <Button compact icon="search" transparent />
-          <Button label="Создать" primary />
-          <Avatar avatar="https://sun9-79.userapi.com/impf/c844321/v844321699/14984/MZk-JQLfsS8.jpg?size=500x517&quality=96&sign=c6c9ff0d9122f1bb98f04d1509a3b2b8&type=album" />
-        </div>
-      </div>
+      <Header />
 
       <div className={styles.Content}>
         <Form />
@@ -69,7 +56,7 @@ function App() {
             },
           }}
         />
-        <Button label="Загрузить еще" />
+        <Button label="Загрузить еще" />H
       </div>
     </div>
   );

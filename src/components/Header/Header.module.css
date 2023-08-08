@@ -1,0 +1,22 @@
+.Header {
+  display: flex;
+  padding: 40px;
+  margin: 0 -40px;
+  border-radius: 80px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(40px);
+  width: 540px;
+}
+
+.Navigation {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Actions {
+  display: flex;
+}

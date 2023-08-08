@@ -1,8 +1,7 @@
-.App {
+.Root {
   flex: 1;
   min-height: 100vh;
   max-width: 540px;
-  position: relative;
 }
 
 .Content {
