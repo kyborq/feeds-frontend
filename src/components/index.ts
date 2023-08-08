@@ -1,4 +1,4 @@
 import { Button } from "./Button/Button";
-import { Post } from "./Post/Post";
+import { PostCard } from "./PostCard/PostCard";
 
-export { Button, Post };
+export { Button, PostCard };
