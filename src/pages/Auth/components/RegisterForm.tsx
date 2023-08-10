@@ -13,8 +13,8 @@ export const RegisterForm = () => {
       <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
         <Input icon="user" placeholder="Имя" />
         <Input icon="atSign" placeholder="Логин" />
-        <Input icon="key" placeholder="Пароль" />
-        <Input icon="key" placeholder="Повторите пароль" />
+        <Input icon="key" placeholder="Пароль" obscure />
+        <Input icon="key" placeholder="Повторите пароль" obscure />
       </div>
       <div style={{ display: "flex", justifyContent: "center", gap: 10 }}>
         <Button label="Войти" />

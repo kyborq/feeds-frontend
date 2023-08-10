@@ -8,6 +8,8 @@ import key from "./key.svg";
 import atSign from "./at-sign.svg";
 import lock from "./lock.svg";
 import user from "./user.svg";
+import eye from "./eye.svg";
+import eyeOff from "./eye-off.svg";
 
 export const icons = {
   thumbsUp,
@@ -20,6 +22,8 @@ export const icons = {
   lock,
   atSign,
   key,
+  eye,
+  eyeOff,
 };
 
 export type TIcon = keyof typeof icons;
