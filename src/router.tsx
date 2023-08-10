@@ -6,12 +6,28 @@ import { Post } from "./pages/Profile/Post";
 import { Saved } from "./pages/Profile/Saved";
 import { Search } from "./pages/Search/Search";
 import { Auth } from "./pages/Auth/Auth";
+import { Feed } from "./pages/Feed/Feed";
+import { AuthRoot } from "./pages/AuthRoot";
 
 export const router = createBrowserRouter([
+  {
+    path: "/auth",
+    element: <AuthRoot />,
+    children: [
+      {
+        path: "",
+        element: <Auth />,
+      },
+    ],
+  },
   {
     path: "/",
     element: <Root />,
     children: [
+      {
+        path: "",
+        element: <Feed />,
+      },
       {
         path: ":id",
         element: <Profile />,
@@ -29,10 +45,6 @@ export const router = createBrowserRouter([
       {
         path: "search",
         element: <Search />,
-      },
-      {
-        path: "auth",
-        element: <Auth />,
       },
     ],
   },

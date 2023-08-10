@@ -1,11 +1,10 @@
-import { Form } from "../../components/Form/Form";
 import { Input } from "../../components/Form/components/Input/Input";
 
-export const Auth = () => {
+export const Feed = () => {
   return (
-    <Form>
+    <div>
       <Input icon="bookmark" placeholder="Логин" />
       <Input icon="bookmark" placeholder="Пароль" />
-    </Form>
+    </div>
   );
 };
