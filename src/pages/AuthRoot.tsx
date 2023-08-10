@@ -6,7 +6,7 @@ import styles from "./AuthRoot.module.css";
 export const AuthRoot = () => {
   return (
     <div className={styles.Root}>
-      <Header />
+      {/* <Header /> */}
       <div className={styles.Content}>
         <Outlet />
       </div>
