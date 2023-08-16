@@ -1,12 +1,21 @@
 .Root {
   flex: 1;
-  min-height: 100vh;
+  min-height: 100dvh;
   max-width: 540px;
+  display: flex;
+  flex-direction: column;
 }
 
 .Content {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 128px 0;
+  flex: 1;
+  padding: 0 30px;
 }
+
+/* @media screen and (max-width: 540px) {
+  .Content {
+    flex: 0;
+  }
+} */

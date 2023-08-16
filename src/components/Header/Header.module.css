@@ -1,14 +1,15 @@
 .Header {
   display: flex;
-  padding: 40px;
-  margin: 0 -40px;
-  border-radius: 80px;
+  /* padding: 40px; */
+  /* margin: 0 -40px; */
+  /* border-radius: 80px; */
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   backdrop-filter: blur(40px);
-  width: 540px;
+  /* width: 540px; */
+  padding: 30px;
 }
 
 .Navigation {

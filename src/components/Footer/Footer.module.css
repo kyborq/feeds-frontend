@@ -1,0 +1,18 @@
+.Footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 30px;
+}
+
+.Link {
+  color: #dee2e6;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 150ms;
+}
+
+.Link:hover {
+  color: #adb5bd;
+  transition: 150ms;
+}
