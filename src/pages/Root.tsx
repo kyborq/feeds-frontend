@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
 
-import { Header } from "../components";
+import { Footer, Header } from "../components";
+import { useScrollToTop } from "../hooks/useScrollToTop";
 
 import styles from "./Root.module.css";
-import { Footer } from "../components/Footer/Footer";
 
 export const Root = () => {
+  useScrollToTop();
+
   return (
     <div className={styles.Root}>
       <Header />
