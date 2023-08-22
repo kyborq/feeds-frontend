@@ -9,13 +9,7 @@
 .Content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   flex: 1;
   padding: 0 30px;
 }
-
-/* @media screen and (max-width: 540px) {
-  .Content {
-    flex: 0;
-  }
-} */

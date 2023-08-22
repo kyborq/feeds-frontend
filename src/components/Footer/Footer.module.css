@@ -1,0 +1,19 @@
+.Footer {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.Sticker {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+.Content {
+  display: flex;
+  font-size: 13px;
+  color: #ced4da;
+}

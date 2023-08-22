@@ -1,0 +1,19 @@
+.Button {
+  display: flex;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  color: #adb5bd;
+  background-color: #e9ecef;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Button.Primary {
+  background-color: #212529;
+  color: #f8f9fa;
+}

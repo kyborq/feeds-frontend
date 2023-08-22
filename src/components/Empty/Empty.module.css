@@ -1,0 +1,20 @@
+.Empty {
+  background-color: #ffffff;
+  border-radius: 20px 20px;
+  padding: 40px 25px;
+  /* border: 1px solid #e9ecef; */
+  box-shadow: 0 0 0px 1px #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.Text {
+  font-size: 13px;
+  color: #adb5bd;
+}
+
+.CropTop {
+  border-radius: 0 0 20px 20px;
+}
