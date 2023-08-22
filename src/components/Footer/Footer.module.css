@@ -3,6 +3,7 @@
   position: relative;
   justify-content: flex-end;
   padding: 30px;
+  user-select: none;
 }
 
 .Sticker {

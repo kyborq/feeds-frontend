@@ -2,7 +2,6 @@
   display: flex;
   padding: 10px 20px;
   font-size: 13px;
-  font-family: sans-serif;
   border: none;
   border-radius: 35px;
   cursor: pointer;
@@ -11,6 +10,7 @@
   height: 40px;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .Button.Primary {

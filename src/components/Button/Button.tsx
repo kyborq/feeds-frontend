@@ -12,8 +12,8 @@ type Props = {
 export const Button: React.FC<Props> = ({ icon, label, primary }) => {
   return (
     <button className={combine(styles.Button, primary && styles.Primary)}>
-      {!!icon && <Icon name={icon} />}
       {!!label && <span>{label}</span>}
+      {!!icon && <Icon name={icon} />}
     </button>
   );
 };

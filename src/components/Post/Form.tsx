@@ -9,8 +9,8 @@ export const PostForm = () => {
       <Avatar />
       <div className={styles.Input}></div>
       <div className={styles.Actions}>
-        <Button icon="atSign" />
-        <Button label="Сохранить" primary />
+        <Button icon="paperclip" />
+        <Button icon="send" label="Сохранить" primary />
       </div>
     </div>
   );

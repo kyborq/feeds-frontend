@@ -12,6 +12,9 @@ import eye from "./eye.svg";
 import eyeOff from "./eye-off.svg";
 import home from "./home.svg";
 import bell from "./bell.svg";
+import paperclip from "./paperclip.svg";
+import send from "./send.svg";
+import compass from "./compass.svg";
 
 export const icons = {
   thumbsUp,
@@ -28,6 +31,9 @@ export const icons = {
   eyeOff,
   home,
   bell,
+  paperclip,
+  send,
+  compass,
 };
 
 export type TIcon = keyof typeof icons;
