@@ -5,14 +5,51 @@
   padding: 15px 20px;
   box-shadow: 0 0 0px 1px #e9ecef;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  gap: 15px;
+  /* align-items: center; */
+}
+
+.Form.Expanded {
+  flex-direction: column;
+}
+
+.Content {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+  padding-right: 5px;
 }
 
 .Input {
   flex: 1;
+  display: flex;
+  align-items: center;
+  cursor: text;
+}
+
+.TextArea {
+  outline: none;
+  border: none;
+  flex: 1;
+  padding: 0;
+  resize: none;
+  font-size: 13px;
+}
+
+.Form.Expanded .Actions {
+  flex: 1;
+  justify-content: space-between;
 }
 
 .Actions {
   display: flex;
   gap: 5px;
+}
+
+.Attachment {
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 10px;
 }

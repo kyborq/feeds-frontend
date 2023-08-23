@@ -1,0 +1,17 @@
+.Attachment {
+  display: flex;
+  position: relative;
+}
+
+.Close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.Image {
+  width: 100%;
+  object-fit: contain;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
