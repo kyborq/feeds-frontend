@@ -74,6 +74,7 @@ export const PostForm = () => {
       {attachment && (
         <Attachment
           src={attachment}
+          editable
           onDelete={() => {
             setAttachment("");
           }}
