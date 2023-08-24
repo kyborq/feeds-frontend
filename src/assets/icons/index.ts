@@ -8,6 +8,8 @@ import key from "./key.svg";
 import atSign from "./at-sign.svg";
 import lock from "./lock.svg";
 import user from "./user.svg";
+import userPlus from "./user-plus.svg";
+import userMinus from "./user-minus.svg";
 import eye from "./eye.svg";
 import eyeOff from "./eye-off.svg";
 import home from "./home.svg";
@@ -40,6 +42,8 @@ export const icons = {
   camera,
   edit,
   trash,
+  userPlus,
+  userMinus,
 };
 
 export type TIcon = keyof typeof icons;

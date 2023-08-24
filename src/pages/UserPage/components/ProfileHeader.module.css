@@ -1,0 +1,16 @@
+.Header {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Thumbnail {
+  height: 100px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.Info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

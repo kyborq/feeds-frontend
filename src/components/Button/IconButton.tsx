@@ -21,7 +21,7 @@ export const IconButton: React.FC<Props> = ({
       onClick={onClick}
       className={combine(styles.Button, primary && styles.Primary)}
     >
-      <Icon name={icon} />
+      <Icon name={icon} size={20} />
       {!!label && <span className={styles.Label}>{label}</span>}
     </button>
   );

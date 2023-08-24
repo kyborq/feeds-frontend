@@ -8,7 +8,7 @@ export const Navigation = () => {
       <NavButton icon="home" link="/" />
       <NavButton icon="compass" link="/explore" />
       <NavButton icon="bell" link="/notifications" />
-      <NavButton icon="user" link="/profile" />
+      <NavButton icon="user" link="/user" />
     </div>
   );
 };
