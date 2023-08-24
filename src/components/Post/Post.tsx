@@ -1,26 +1,74 @@
 import { Avatar } from "../Avatar/Avatar";
+import { IconButton } from "../Button/IconButton";
 import { Card } from "../Card/Card";
-import { Icon } from "../Icon";
 import { Attachment } from "./Attachment";
 
 import styles from "./Post.module.css";
 
-export const Post = () => {
+type VoteStatus = -1 | 1;
+
+type PostAuthor = {
+  avatar: string;
+  name: string;
+};
+
+type Props = {
+  image?: string;
+  content?: string;
+  votes: number;
+  comments?: number;
+  date: string;
+  author: PostAuthor;
+  yourVote?: VoteStatus;
+  onVote?: (value: VoteStatus) => void;
+  onShowComments?: () => void;
+};
+
+export const Post: React.FC<Props> = ({
+  content,
+  image,
+  votes,
+  author,
+  date,
+  yourVote,
+  comments,
+  onVote,
+  onShowComments,
+}) => {
+  const handleVoteUp = () => onVote && onVote(1);
+  const handleVoteDown = () => onVote && onVote(-1);
+
   return (
     <Card className={styles.Post}>
       <div className={styles.PostHeader}>
-        <Avatar />
-        <div>
-          <span></span>
-          <span></span>
+        <Avatar image={author.avatar} />
+        <div className={styles.Info}>
+          <span className={styles.Author}>{author.name}</span>
+          <span className={styles.Date}>{date}</span>
         </div>
-        <Icon name="thumbsUp" />
+        <IconButton icon="moreHorizontal" />
       </div>
-      <Attachment src="blob:http://localhost:5173/f3cdea3d-2570-47dd-8c2e-e7181c0209ec" />
+      {!!content && <div>{content}</div>}
+      {!!image && <Attachment src={image} />}
       <div className={styles.PostFooter}>
-        <Icon name="thumbsUp" />
-        <Icon name="thumbsDown" />
-        <Icon name="message" />
+        <div className={styles.VotingBlock}>
+          <IconButton
+            icon="thumbsUp"
+            label={`${votes}`}
+            onClick={handleVoteUp}
+            primary={yourVote === 1}
+          />
+          <IconButton
+            icon="thumbsDown"
+            onClick={handleVoteDown}
+            primary={yourVote === -1}
+          />
+        </div>
+        <IconButton
+          icon="message"
+          label={`${comments || ""}`}
+          onClick={onShowComments}
+        />
       </div>
     </Card>
   );

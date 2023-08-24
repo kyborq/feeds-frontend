@@ -1,3 +1,38 @@
 .Post {
   flex-direction: column;
+  gap: 10px;
+}
+
+.PostHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2px;
+}
+
+.Author {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Date {
+  font-size: 11px;
+  color: #c7c7c7;
+}
+
+.PostFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.VotingBlock {
+  display: flex;
+  gap: 5px;
 }
