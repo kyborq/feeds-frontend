@@ -16,6 +16,8 @@ import paperclip from "./paperclip.svg";
 import send from "./send.svg";
 import compass from "./compass.svg";
 import camera from "./camera.svg";
+import edit from "./pencil.svg";
+import trash from "./trash.svg";
 
 export const icons = {
   thumbsUp,
@@ -36,6 +38,8 @@ export const icons = {
   send,
   compass,
   camera,
+  edit,
+  trash,
 };
 
 export type TIcon = keyof typeof icons;

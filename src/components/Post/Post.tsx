@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Avatar } from "../Avatar/Avatar";
 import { IconButton } from "../Button/IconButton";
 import { Card } from "../Card/Card";
+import { Popup } from "../Popup/Popup";
 import { Attachment } from "./Attachment";
 
 import styles from "./Post.module.css";
+import { MenuItem } from "../Popup/MenuItem";
 
 type VoteStatus = -1 | 1;
 
@@ -35,6 +38,8 @@ export const Post: React.FC<Props> = ({
   onVote,
   onShowComments,
 }) => {
+  const [popupVisible, setPopupVisible] = useState(false);
+
   const handleVoteUp = () => onVote && onVote(1);
   const handleVoteDown = () => onVote && onVote(-1);
 
@@ -46,7 +51,18 @@ export const Post: React.FC<Props> = ({
           <span className={styles.Author}>{author.name}</span>
           <span className={styles.Date}>{date}</span>
         </div>
-        <IconButton icon="moreHorizontal" />
+        <div className={styles.Actions}>
+          <IconButton
+            icon="moreHorizontal"
+            onClick={() => setPopupVisible(true)}
+          />
+          {popupVisible && (
+            <Popup onClose={() => setPopupVisible(false)}>
+              <MenuItem icon="trash" label="Удалить" />
+              <MenuItem icon="edit" label="Редактировать" />
+            </Popup>
+          )}
+        </div>
       </div>
       {!!content && <div>{content}</div>}
       {!!image && <Attachment src={image} />}
